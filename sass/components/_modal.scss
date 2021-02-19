@@ -1,0 +1,239 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    & .modal {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  padding: 40px 40px;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+.button-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  & svg {
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+
+.input-wrapper {
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  position: relative;
+  display: block;
+
+  & svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.form-input {
+  padding-left: 42px;
+
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus-within {
+    outline: 0;
+    border: 1px solid #2196f3;
+  }
+}
+
+.form-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+
+  &:focus-within svg {
+    fill: #2196f3;
+  }
+}
+
+.form-textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus-within {
+    outline: 0;
+    border: 1px solid #2196f3;
+  }
+}
+
+.form-label-checkbox {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.lable-linc {
+  color: #2196f3;
+  text-decoration: underline;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-left: 4px;
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.icon-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox:focus + .icon-checkbox {
+  background-color: #2196f3;
+  background-image: url('../img/icon/check-icon.svg');
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
+.checkbox:checked + .icon-checkbox {
+  background-color: #2196f3;
+  background-image: url('../img/icon/check-icon.svg');
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
+.form-btn {
+  align-self: center;
+  padding: 10px 56px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

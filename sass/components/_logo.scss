@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+  font-family: $logo-text;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $logo-color;
+
+  &-dark {
+    color: $logo-color-dark;
+  }
+
+  &-white {
+    color: $logo-color-white;
+  }
+}
