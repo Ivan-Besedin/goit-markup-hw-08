@@ -1,31 +1,48 @@
 .regular-customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   h3 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #212121;
   }
 
-  ul {
-    display: flex;
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    h3 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.regular {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.logot-client {
+  width: 210px;
+  height: 90px;
+  margin: 15px;
+
+  @media screen and(min-width: 768px) {
+    width: 226px;
   }
 
-  .box {
+  @media screen and(min-width: 1200px) {
     width: 170px;
-    height: 90px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
 

@@ -1,4 +1,5 @@
 .we-do {
+  display: none;
   padding-bottom: 94px;
 
   &-text {
@@ -14,6 +15,10 @@
 
   & ul {
     padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 

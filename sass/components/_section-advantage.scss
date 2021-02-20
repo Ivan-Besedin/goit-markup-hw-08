@@ -1,47 +1,75 @@
 .advantage {
-  padding-top: 89px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  &-cards {
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
+}
 
-  &-card {
-    width: 270px;
+.advantage-cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
-    &:not(:last-child) {
-      margin-right: 30px;
+.advantage-card {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
-  &-icon {
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.advantage-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .key-slogan {
   margin-top: 0;
   margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: #212121;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .text {
   margin: 0;
+  font-weight: bold;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
