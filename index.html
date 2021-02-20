@@ -16,36 +16,58 @@
     <!-- шапка сайта -->
     <header class="header">
         <div class="container menu">
-            <nav class="menu-nav">
-                <a href="./index.html" lang="en" class="logo">Web<span class="logo-dark">Studio</span></a>
-                <ul class="list-no-stule nav-list">
-                    <li class="nav-item"><a href="./index.html" class="nav-link color-atelier underscore">Студия</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            <a href="./index.html" lang="en" class="logo">Web<span class="logo-dark">Studio</span></a>
+            <button type="button" class="mobail-button open" mobail-open>
+                <svg  width="24" height="16">
+                    <use href="./img/icon/sprait-icon.svg#mobail-open"></use>
+                </svg>
+            </button>
+            <div class="mobail-nav" data-mobail>
+                <button type="button" class="mobail-button close" mobail-close>
+                    <svg width="24" height="16">
+                        <use href="./img/icon/sprait-icon.svg#mobail-close"></use>
+                    </svg>
+                </button>
+                <nav class="menu-nav">
+                    <ul class="list-no-stule nav-list">
+                        <li class="nav-item"><a href="./index.html" class="nav-link color-atelier underscore">Студия</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="list-no-stule address-list">
+                    <li class="address-item">
+                        <a href="mailto:info@devstudio.com" class="address mail">
+                            <svg class="" width="16" height="12">
+                                <use href="./img/icon/sprait-icon.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="address-item">
+                        <a href="tel:+380961111111" class="address tell">
+                            <svg class="" width="10" height="16">
+                                <use href="./img/icon/sprait-icon.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="list-no-stule address-list">
-                <li class="address-item">
-                    <a href="mailto:info@devstudio.com" class="address mail">
-                        <svg class="" width="16" height="12">
-                            <use href="./img/icon/sprait-icon.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="address-item">
-                    <a href="tel:+380961111111" class="address tell">
-                        <svg class="" width="10" height="16">
-                            <use href="./img/icon/sprait-icon.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <div class="mobail-address">
+                    <ul class="list-no-stule mobail-list">
+                        <li><a href="tel:+380961111111" class="mobail-tel">+38 096 111 11 11</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="mobail-mail">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="list-no-stule social">
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <!-- /шапка сайта -->
-    <!-- основной контент -->
     <main>
         <!-- главный блок -->
         <section class="hero">
@@ -110,356 +132,15 @@
                 </div>
             </div> 
         </section>
-        <!-- наше преимущество -->
-        <section class="advantage">
-            <div class="container">
-                <h2 class="invisible-text">Наше преимущество</h2>
-                <ul class="list-no-stule advantage-cards">
-                    <li class="advantage-card children">
-                        <div class="advantage-icon">
-                            <svg class="" width="70" height="70">
-                                <use href="./img/icon/sprait-icon.svg#antenna"></use>
-                            </svg>
-                        </div>
-                        <h3 class="key-slogan">ВНИМАНИЕ К ДЕТЯМ</h3>
-                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li class="advantage-card punctuality">
-                        <div class="advantage-icon">
-                            <svg class="" width="70" height="70">
-                                <use href="./img/icon/sprait-icon.svg#clock"></use>
-                            </svg>
-                        </div>
-                        <h3 class="key-slogan">ПУНКТУАЛЬНОСТЬ</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li class="advantage-card planning">
-                        <div class="advantage-icon">
-                            <svg class="" width="70" height="70">
-                                <use href="./img/icon/sprait-icon.svg#diagram"></use>
-                            </svg>
-                        </div>
-                        <h3 class="key-slogan">ПЛАНИРОВАНИЕ</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li class="advantage-card technologies">
-                        <div class="advantage-icon">
-                            <svg class="" width="70" height="70">
-                                <use href="./img/icon/sprait-icon.svg#astronaut"></use>
-                            </svg>
-                        </div>
-                        <h3 class="key-slogan">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
-            </div> 
-        </section>
-        <!-- чем мы занимаемся -->
-        <section class="we-do">
-            <div class="container">
-                <h2 class="we-do-text">Чем мы занимаемся</h2>
-                <ul class="list-no-stule portfolio">
-                    <li class="photo">
-                        <div class="photo-cards">
-                            <img src="./img/development.jpg" alt="разроботка" width="370" height="294">
-                            <div class="inscription">
-                                <p>Десктопные приложения</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="photo">
-                        <div class="photo-cards">
-                            <img src="./img/presentation.jpg" alt="презентация" width="370" height="294">
-                            <div class="inscription">
-                                <p>Мобильные приложения</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="photo">
-                        <div class="photo-cards">
-                            <img src="./img/design.jpg" alt="дизайн" width="370" height="294">
-                            <div class="inscription">
-                                <p>Дизайнерские решения</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>    
-        </section>
-        <!-- наша команда -->
-        <section class="team">
-            <div class="container">
-                <h2 class="our-team">Наша команда</h2>  
-                <ul class="list-no-stule team-cards">
-                    <li class="card-master">
-                        <img src="./img/igor.jpg" alt="Игорь Демьянко" width="270" height="260">
-                        <div class="about-master">
-                            <h3 class="name">Игорь Демьянко</h3>
-                            <p lang="en" class="profession">Product Designer</p>
-                            <ul class="list-no-stule">
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="card-master">
-                        <img src="./img/olga.jpg" alt="Ольга Репина" width="270" height="260">
-                        <div class="about-master">
-                            <h3 class="name">Ольга Репина</h3>
-                            <p lang="en" class="profession">Frontend Develope</p>
-                            <ul class="list-no-stule">
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="card-master">
-                        <img src="./img/nik.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <div class="about-master">
-                            <h3 class="name">Николай Тарасов</h3>
-                            <p lang="en" class="profession">Marketing</p>
-                            <ul class="list-no-stule">
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="card-master">
-                        <img src="./img/mih.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <div class="about-master">
-                            <h3 class="name">Михаил Ермаков</h3>
-                            <p lang="en" class="profession">UI Designer</p>
-                            <ul class="list-no-stule">
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="networks">
-                                    <a href="">
-                                        <svg class="">
-                                            <use href="./img/icon/sprait-icon.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Постоянные клиенты -->
-        <section class="regular-customers">
-            <div class="container">
-                <h3>Постоянные клиенты</h3>
-                <ul class="list-no-stule regular">
-                    <li class="box">
-                        <a href="" class="icon-customers">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#client-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="box">
-                        <a href="" class="icon-customers">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#client-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="box">
-                        <a href="" class="icon-customers">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#client-3"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="box">
-                        <a href="" class="icon-customers">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#client-4"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="box">
-                        <a href="" class="icon-customers">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#client-5"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="box">
-                        <a href="" class="icon-customers">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#client-6"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- /Постоянные клиенты/ -->
+
     </main>
-    <!-- /основной контент -->
-    <!-- подвал сайта -->
-    <footer class="footer">
-        <div class="container"> 
-            <div class="footer-information">
-                <a href="./index.html" lang="en" class="logo">Web<span class="logo-white">Studio</span></a>
-                <address>г. Киев, пр-т Леси Украинки, 26</address>
-                <ul class="list-no-stule">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="lower-address">info@devstudio.com</a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380961111111" class="lower-address">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social-network">
-               <h4 class="join-us">Присоединяйтесь</h4>
-                <ul class="list-no-stule joining">
-                    <li class="references">
-                        <a href="">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="references">
-                        <a href="">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="references">
-                        <a href="">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="references">
-                        <a href="">
-                            <svg class="">
-                                <use href="./img/icon/sprait-icon.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe">
-                <h4>Подпишитесь на рассылку</h4>
-                <form class="mailing">
-                    <input type="email" name="mail" placeholder="E-mail">
-                    <span class="button-icon">
-                        <button type="submit">Подписаться</button>
-                        <svg class="" width="24" height="24">
-                            <use href="./img/icon/sprait-icon.svg#icon-mailing"></use>
-                        </svg>
-                    </span>
-                </form>
-            </div> 
-        </div> 
-    </footer>
+    <!-- /шапка сайта -->
+    <!-- основной контент -->
+   
     <!-- /подвал сайта -->
     <!-- подключение мадалки -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobail.js"></script>
     <!-- Форма -->
     <!-- <script src="./js/modal.js"></script> -->
     <!-- подключение мадалки -->
