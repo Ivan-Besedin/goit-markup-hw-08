@@ -72,12 +72,13 @@
         <!-- главный блок -->
         <section class="hero">
             <div class="container">
-                <div class="hero-text-button">
+                <div class="hero-container">
                     <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     <button type="button" class="button-promo" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
-            <!-- МОДАЛЬНОЕ ОКНО -->
+            <!-- Модалка -->
+            
             <div class="backdrop is-hidden" data-modal>  
                 <div class="modal">
                     <button type="button" class="button-modal" data-modal-close>
@@ -177,13 +178,14 @@
             </div>
         </section>
         <!-- чем мы занимаемся -->
-        <section class="we-do">
+         <section class="we-do">
             <div class="container">
                 <h2 class="we-do-text">Чем мы занимаемся</h2>
                 <ul class="list-no-stule portfolio">
                     <li class="photo">
                         <div class="photo-cards">
-                            <img src="./img/development.jpg" alt="разроботка" width="370" height="294">
+                            <img srcset="./img/we-do-img/development.jpg 1x, ./img/we-do-img/development@2x.jpg 2x" 
+                            src="./img/we-do-img/development.jpg" alt="разроботка" width="370" height="294">
                             <div class="inscription">
                                 <p>Десктопные приложения</p>
                             </div>
@@ -191,7 +193,8 @@
                     </li>
                     <li class="photo">
                         <div class="photo-cards">
-                            <img src="./img/presentation.jpg" alt="презентация" width="370" height="294">
+                            <img srcset="./img/we-do-img/presentation.jpg 1x, ./img/we-do-img/presentation@2x.jpg 2x"  
+                            src="./img/we-do-img/presentation.jpg" alt="презентация" width="370" height="294">
                             <div class="inscription">
                                 <p>Мобильные приложения</p>
                             </div>
@@ -199,7 +202,8 @@
                     </li>
                     <li class="photo">
                         <div class="photo-cards">
-                            <img src="./img/design.jpg" alt="дизайн" width="370" height="294">
+                            <img srcset="./img/we-do-img/design.jpg 1x, ./img/we-do-img/design@2x.jpg 2x" 
+                            src="./img/we-do-img/design.jpg" alt="дизайн" width="370" height="294">
                             <div class="inscription">
                                 <p>Дизайнерские решения</p>
                             </div>
@@ -214,7 +218,13 @@
                 <h2 class="our-team">Наша команда</h2>
                 <ul class="list-no-stule team-cards">
                     <li class="card-master">
-                        <img src="./img/igor.jpg" alt="Игорь Демьянко">
+                        <picture>
+                            <source srcset="./img/team/igor.jpg 1x, ./img/team/igor@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/desktop-igor.jpg 1x, ./img/team/desktop-igor@2x.jpg 2x" media="(min-width: 768px)">
+                            <img srcset="./img/team/mobail-igor.jpg 1x, ./img/team/mobail-igor@2x.jpg 2x" src="./img/team/mobail-igor.jpg"
+                                alt="Игорь Демьянко">
+                        </picture>
+                        
                         <div class="about-master">
                             <h3 class="name">Игорь Демьянко</h3>
                             <p lang="en" class="profession">Product Designer</p>
@@ -251,7 +261,12 @@
                         </div>
                     </li>
                     <li class="card-master">
-                        <img src="./img/olga.jpg" alt="Ольга Репина">
+                        <picture>
+                            <source srcset="./img/team/olga.jpg 1x, ./img/team/olga@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/desktop-olga.jpg 1x, ./img/team/desktop-olga@2x.jpg 2x" media="(min-width: 768px)">
+                            <img srcset="./img/team/mobail-olga.jpg 1x, ./img/team/mobail-olga@2x.jpg 2x" src="./img/team/mobail-olga.jpg"
+                                alt="Игорь Демьянко">
+                        </picture>
                         <div class="about-master">
                             <h3 class="name">Ольга Репина</h3>
                             <p lang="en" class="profession">Frontend Develope</p>
@@ -288,7 +303,12 @@
                         </div>
                     </li>
                     <li class="card-master">
-                        <img src="./img/nik.jpg" alt="Николай Тарасов">
+                        <picture>
+                            <source srcset="./img/team/nik.jpg 1x, ./img/team/nik@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/desktop-nik.jpg 1x, ./img/team/desktop-nik@2x.jpg 2x" media="(min-width: 768px)">
+                            <img srcset="./img/team/mobail-nik.jpg 1x, ./img/team/mobail-nik@2x.jpg 2x" src="./img/team/mobail-nik.jpg"
+                                alt="Игорь Демьянко">
+                        </picture>
                         <div class="about-master">
                             <h3 class="name">Николай Тарасов</h3>
                             <p lang="en" class="profession">Marketing</p>
@@ -325,7 +345,12 @@
                         </div>
                     </li>
                     <li class="card-master">
-                        <img src="./img/mih.jpg" alt="Михаил Ермаков">
+                        <picture>
+                            <source srcset="./img/team/mih.jpg 1x, ./img/team/mih@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/desktop-mih.jpg 1x, ./img/team/desktop-mih@2x.jpg 2x" media="(min-width: 768px)">
+                            <img srcset="./img/team/mobail-mih.jpg 1x, ./img/team/mobail-mih@2x.jpg 2x" src="./img/team/mobail-mih.jpg"
+                                alt="Игорь Демьянко">
+                        </picture>
                         <div class="about-master">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p lang="en" class="profession">UI Designer</p>
