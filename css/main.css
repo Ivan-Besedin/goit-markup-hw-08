@@ -1048,6 +1048,10 @@ address {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.references a:hover, .references a:focus {
+  background-color: #2196f3;
+}
+
 @media screen and (max-width: 1199px) {
   .subscribe {
     margin: auto;
@@ -1124,7 +1128,7 @@ address {
   content: '';
   width: 24px;
   height: 24px;
-  background-image: url(../../img/icon/icon-mailing-submit.svg);
+  background-image: url("../img/icon/icon-mailing-submit.svg");
   margin-left: 10px;
 }
 
