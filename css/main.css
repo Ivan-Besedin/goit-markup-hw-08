@@ -21,6 +21,12 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -120,6 +126,13 @@ img {
   }
   .mobail-nav.is-open {
     display: block;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .mobail-nav {
+    width: 480px;
+    left: 0;
   }
 }
 
@@ -684,6 +697,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  .team {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
@@ -928,6 +947,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 480px;
+  }
+}
+
 .footer-wrapper {
   text-align: center;
 }
@@ -1103,6 +1128,7 @@ address {
 }
 
 .mailing-submit {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1126,6 +1152,9 @@ address {
 
 .mailing-submit::after {
   content: '';
+  position: absolute;
+  top: 13px;
+  right: 28px;
   width: 24px;
   height: 24px;
   background-image: url("../img/icon/icon-mailing-submit.svg");
@@ -1417,6 +1446,12 @@ address {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .backdrop {
     padding: 93px 15px;
@@ -1458,6 +1493,12 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
